@@ -5,7 +5,8 @@ $(document).on('pagecreate', '#feedPage', function(event) {
 	
 	// Use an HTML GET request to obtain data from an API
 	var xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET", feedURL, false);
+	//xmlhttp.open("GET", feedURL, false); //Locks app until recieves request back from server
+    xhttp.open("GET", "ajax_test.asp", true); //Allows user to use app while getting request back
 	xmlhttp.send();
 		
 		
